@@ -1,0 +1,18 @@
+[package]
+name = "w1nthinker/path-math"
+description = "do more with Path2D's"
+version = "0.1.0"
+license = "MIT"
+authors = ["w1nthinker"]
+realm = "shared"
+registry = "https://github.com/UpliftGames/wally-index"
+repository = "https://github.com/w1nthinker/path-math"
+include = [
+    "src",
+    "README.md",
+    "LICENSE",
+]
+exclude = [
+    "examples",
+    "rokit.toml",
+]

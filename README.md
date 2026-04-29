@@ -1,8 +1,18 @@
 # PathMath
 do more with Path2D's
 
+## Installation
+
+[install with wally](https://wally.run/package/w1nthinker/path-math)
+
+[get from creator store](https://create.roblox.com/store/asset/79483342482432/PathMath)
+
+[edit showcase game](https://www.roblox.com/games/85879577952024/PathMath-Showcase)
+
 ## Examples
 get both example [guis](/examples/prefabs)
+
+[play showcase game](https://www.roblox.com/games/85879577952024/PathMath-Showcase)
 
 [virtualized](/examples/virtualized) grid with different random presets using [virtualized-ui](https://github.com/w1nthinker/virtualized-ui)
 
@@ -16,7 +26,7 @@ both in parallel
 
 https://github.com/user-attachments/assets/5e4f6ad1-1d51-4b3e-ab86-7fac63e8c52a
 
-- `src/PathMath.luau`  
+- `src/init.luau`  
   The library module. This is the file you use in your Roblox project.
 
 - `examples/ExamplesClient.local.luau`  
@@ -36,11 +46,11 @@ https://github.com/user-attachments/assets/5e4f6ad1-1d51-4b3e-ab86-7fac63e8c52a
 
 ## Getting Started
 
-PathMath is currently distributed as a plain Luau module.
+PathMath is distributed as a Wally package and as a plain Luau module.
 
 To use it in a Roblox project:
 
-1. Copy `src/PathMath.luau` into your game.
+1. Install the package with Wally or copy `src/init.luau` into your game.
 2. Place it somewhere your UI code can require it, such as `ReplicatedStorage`.
 3. Create a parent GUI object for the path.
 4. Create a PathMath controller with a path configuration.
@@ -67,7 +77,7 @@ For very large lists of animated paths, use virtualization so only visible UI it
 
 PathMath targets Roblox Luau and Roblox UI code that can use `Path2D`.
 
-No external package manager setup is included in this repository. The module can be copied directly into a Roblox project.
+The module can be installed through Wally or copied directly into a Roblox project.
 
 The virtualized demo also expects [`virtualized-ui`](https://github.com/w1nthinker/virtualized-ui) to be available.
 
