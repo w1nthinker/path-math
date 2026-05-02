@@ -32,11 +32,11 @@ https://github.com/user-attachments/assets/5e4f6ad1-1d51-4b3e-ab86-7fac63e8c52a
 - `examples/ExamplesClient.local.luau`  
   Demo runner for the standard showcase UI.
 
-- `examples/Shared.luau`  
-  Shared demo helpers and generated path shapes used by the examples.
-
 - `examples/presets/`  
-  Individual showcase entries for circles, gauges, spinners, arcs, stars, hearts, spirals, polygons, responsive widths, strokes, dynamic endpoints, and more.
+  Individual showcase entries for circles, gauges, spinners, arcs, stars, hearts, spirals, polygons, responsive widths, strokes, dynamic endpoints, and more. Each preset keeps its own example logic and uses `Utility.luau` only for small shared helpers.
+
+- `examples/presets-full/`  
+  Standalone versions of the same presets. Each file fully implements that example without shared preset helper modules.
 
 - `examples/virtualized/`  
   A stress/demo grid that renders many randomized animated spinners using `virtualized-ui`.

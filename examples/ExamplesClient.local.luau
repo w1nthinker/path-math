@@ -3,12 +3,12 @@
 local RunService = game:GetService("RunService")
 
 local PathMathModule = require("@game/ReplicatedStorage/PathMath")
-local Shared = require("./Examples/Shared")
+local Utility = require("./Examples/Utility")
 
-type PathConfig = Shared.PathConfig
-type PathController = Shared.PathController
-type PathMathApi = Shared.PathMathApi
-type ExampleContext = Shared.ExampleContext
+type PathConfig = Utility.PathConfig
+type PathController = Utility.PathController
+type PathMathApi = Utility.PathMathApi
+type ExampleContext = Utility.ExampleContext
 
 local DEFAULT_VIEWPORT_SIZE = Vector2.new(1920, 1080)
 
@@ -127,7 +127,6 @@ local exampleModules: { ModuleScript } = {
 	examplesFolder:WaitForChild("HorizontalProgress") :: ModuleScript,
 	examplesFolder:WaitForChild("InfiniteEight") :: ModuleScript,
 	examplesFolder:WaitForChild("InfinityEightSpinner") :: ModuleScript,
-	examplesFolder:WaitForChild("NegativeProgress") :: ModuleScript,
 	examplesFolder:WaitForChild("StaticStar") :: ModuleScript,
 	examplesFolder:WaitForChild("StarSpinner") :: ModuleScript,
 	examplesFolder:WaitForChild("StaticHeart") :: ModuleScript,
